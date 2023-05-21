@@ -1,0 +1,13 @@
+spring:
+  config:
+    import: "consul:"
+  cloud:
+    consul:
+      config:
+        enabled: true
+        fail-fast: true
+      host: localhost
+      port: 8500
+
+  application:
+    name: fsm-consul
